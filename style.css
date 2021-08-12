@@ -1,0 +1,59 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 15rem;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  padding-top: 100%;
+}
+
+.card-img-top {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: contain;
+}
+
+.card-title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-in-cart {
+  background-color: rgb(190, 190, 190, 0.5);
+}
+
+.cart-contaioner {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cart {
+  font-size: 12px;
+  height: auto;
+}
+
+.card-cart h5 {
+  font-size: 14px;
+}
+
+.modal-body img {
+  width: 100%;
+}
