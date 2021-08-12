@@ -1,5 +1,5 @@
 let books = [];
-let booksInCart = [];
+let booksInCartList = [];
 
 const row = document.querySelector('.row')
 const cart = document.querySelector('.cart-list')
@@ -39,8 +39,9 @@ function displayBooks(books) {
 const btnAdd = (event, n) => {
     const currentCard = event.target.closest(".card")
     currentCard.classList.add("book-in-cart");
-    booksInCart.push(books[n]);
-    bookINChat(booksInCart);
+    booksInCartList.push(books[n]);
+    bookINChat(booksInCartList);
+
 }
 
 const btnSkip = (event) => {
@@ -74,12 +75,13 @@ const bookINChat = (books) => {
 
 const btnDeleteBookCart = (event) => {
     event.target.closest(".card").remove();
-
+    let x = event.target.closest(".card").innerHTML
+    console.log(x)
 }
 
 const removeAll = () => {
     cart.innerHTML = ""
-    booksInCart = [];
+    booksInCartList = [];
 }
 
 const bookDetails = (event, n) => {
